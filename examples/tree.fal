@@ -1,0 +1,19 @@
+// Fractal definition of the Koch curve
+
+def tree fractal (1.0/1.707):
+    fd(1.0/1.707)
+    save
+    left(45)
+    self
+    restore
+    right(45)
+    self
+    end
+
+// clear the screen, reset the turtle
+clear home
+// step down 100 steps to give room for big tree,  ensure pen is down
+pu left(90) back(100) pd
+// render Tree with a trunk 150 steps long
+render[8](150) tree
+

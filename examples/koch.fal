@@ -1,0 +1,18 @@
+// Fractal definition of the Koch curve
+
+def koch fractal (0.333):
+    self
+    left(60)
+    self
+    right(120)
+    self
+    left(60)
+    self
+    end
+
+// clear the screen, reset the turtle
+clear home
+// step back 100 steps to give room for big curve,  ensure pen is down
+pu back(100) pd
+// render koch curve at level 8 on line segment 200 steps long
+render[8](200) koch

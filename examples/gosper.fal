@@ -1,0 +1,16 @@
+// Fractal definition of the Gosper C curve
+
+def gosper fractal (0.707):
+    left 45
+    self 
+    right 90
+    self 
+    left 45
+    end
+
+// clear the screen, reset the turtle
+clear home
+// step back 100 steps to give room for big curve,  ensure pen is down
+pu back 100 pd
+// render gosper curve at level 8 on line segment 200 steps long
+render[8](200) gosper

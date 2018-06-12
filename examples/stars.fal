@@ -1,0 +1,15 @@
+def stars fractal (0.35): 
+    
+    repeat 6:
+        right 60 
+        fd 1.5
+        self
+    end
+end
+ 
+pu
+left 90
+fd 90
+right 90
+pd 
+render(200) stars

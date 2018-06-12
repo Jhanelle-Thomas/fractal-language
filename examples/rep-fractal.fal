@@ -1,0 +1,29 @@
+// Fractal that uses repeat in its generator
+
+def g2 fractal(0.707):
+    repeat 2:
+      left 45 self
+      right 90 self
+      left 45
+      end
+    end
+
+def dragon fractal(0.5):
+    left 60 self
+    right 120 self
+    self
+    left 120 self
+    right 60
+    end
+
+home back 100 clear
+
+// a triangular spiral
+repeat[i] 8:
+    left 60 fd (200 - 15 * i)
+    right 120 fd (200 - 15 * i - 5)
+    rt 120 fd (200 - 15 * i - 10)
+    rt 180
+    end
+
+      

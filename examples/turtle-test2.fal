@@ -1,0 +1,4 @@
+clear() home()
+fd(.20) left(90) fd(.10*3) right(60+30) fd(.40/2) right(90) fd(.30) 
+left(30) fd(.20)
+

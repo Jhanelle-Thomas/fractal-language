@@ -1,0 +1,12 @@
+def spirograph fractal (0.5): 
+    repeat 26:      
+        left 30 
+        repeat 5: 
+            right 120 
+            fd 1.5 
+        end 
+        left 15
+    end
+end
+
+render(200) spirograph
